@@ -19,9 +19,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".DecodeActivityList" />
+        <activity android:name=".DecodeAudioActivity" />
         <activity android:name=".DecodeMP4Activity"
             android:screenOrientation="landscape"
             ></activity>
+
+        <activity android:name=".DecodeMP4Activity2"
+            android:screenOrientation="landscape"
+           />
     </application>
 
 </manifest>

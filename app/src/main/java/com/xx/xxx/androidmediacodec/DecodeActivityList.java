@@ -18,8 +18,12 @@ public class DecodeActivityList extends AppCompatActivity {
             case R.id.button3://解码mp4
                 toAcitivity(DecodeMP4Activity.class);
                 break;
-            case R.id.button2://编码
+            case R.id.button4://编码
+                toAcitivity(DecodeMP4Activity2.class);
+                break;
 
+            case R.id.button5://音频编码
+                toAcitivity(DecodeAudioActivity.class);
                 break;
         }
     }
