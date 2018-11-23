@@ -5,22 +5,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class DecodeActivityList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_decode_list);
     }
 
     public void onClicked(View view) {
         switch (view.getId()){
-            case R.id.button://解码
-                toAcitivity(DecodeActivityList.class);
+            case R.id.button3://解码mp4
+                toAcitivity(DecodeMP4Activity.class);
                 break;
             case R.id.button2://编码
 
-               break;
+                break;
         }
     }
 
