@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraCodecActivity">
+
+    <RelativeLayout
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <SurfaceView
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:id="@+id/surfaceViewEncode"
+            />
+
+
+        <SurfaceView
+            android:layout_alignParentRight="true"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:id="@+id/surfaceViewDecode"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnStartLayout"
+        android:layout_below="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <Button
+            android:text="开始"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStart"
+            />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:text="开始"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStop"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@+id/btnStartLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/capture"
+        />
+</RelativeLayout>

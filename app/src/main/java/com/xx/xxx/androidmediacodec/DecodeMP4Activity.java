@@ -99,6 +99,7 @@ public class DecodeMP4Activity extends AppCompatActivity implements SurfaceHolde
 
             while (!Thread.interrupted()){
                 if (!isEOS){
+                    //-1表示一直等待；0表示不等待；其他大于0的参数表示等待毫秒数
                     int inIndex = decoder.dequeueInputBuffer(10000);
                     if (inIndex >= 0){
                         ByteBuffer byteBuffer = inputBuffers[inIndex];
